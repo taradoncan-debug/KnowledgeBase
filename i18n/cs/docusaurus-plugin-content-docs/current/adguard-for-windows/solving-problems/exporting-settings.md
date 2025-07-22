@@ -11,14 +11,14 @@ Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, kt
 
 Změny v AdGuard pro Windows v8.0 jsou významné a doufáme, že se vám nová verze bude líbit. Je však pravděpodobné, že něco nepůjde tak, jak jste očekávali. Verze 8.0 je velmi odlišná; koneckonců je to první noční verze. Pokud vám rozhraní verze 8.0 nevyhovuje nebo jste narazili na příliš mnoho problémů s funkčností/stabilitou, můžete obnovit předchozí verzi i s jejími nastaveními.
 
-Abyste měli jistotu, že vaše nastavení zůstanou během celého procesu zachována, doporučujeme je před aktualizací na verzi 8.0 exportovat, abyste mohli v případě potřeby znovu nainstalovat verzi 7 a importovat uložená nastavení zpět.
+To ensure your settings are preserved during the whole process, it’s recommended to export them before upgrading to v8.0. If needed, you can then reinstall the version 7 and import back your saved settings.
 
 Alternativně je k dispozici také následující metoda:
 
 1. Po aktualizaci na verzi 8 otevřete složku `C:\ProgramData\Adguard\Backups` a vyhledejte soubor ZIP s názvem podobným jako `adguard_settings_7.21.5008.0-08-04-2025-13_42_15.276.zip`.
-2. Zkopírujte tento soubor ZIP někam mimo `C:\ProgramData\Adguard`, například na plochu (to je důležité, protože v dalším kroku bude smazán).
+2. Copy this ZIP file somewhere outside of `C:\ProgramData\Adguard`, for example, to the desktop. This is important because it will be deleted in the next step.
 3. Odinstalujte verzi 8.0 se zapnutou volbou **odstranit nastavení**.
-4. Nainstalujte sestavení verze 7, které bylo nainstalováno před aktualizací.
+4. Install the previous build. You can find the download link in the _Assets_ section [on GitHub](https://github.com/AdguardTeam/AdguardForWindows/releases/tag/v7.21.0-rc-2).
 5. Ukončením verze 7 ze systémové lišty zastavte filtrování.
 6. Rozbalte obsah souboru ZIP z prvního kroku a nahraďte následující soubory:
    - `adguard.db` → `C:\ProgramData\Adguard`
